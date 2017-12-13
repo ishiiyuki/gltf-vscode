@@ -11,6 +11,7 @@ export class GltfPreviewDocumentContentProvider implements TextDocumentContentPr
     private _babylonHtml: string;
     private _cesiumHtml: string;
     private _threeHtml: string;
+    private _grimoireHtml: string;
 
     public UriPrefix = 'gltf-preview://';
 
@@ -20,6 +21,7 @@ export class GltfPreviewDocumentContentProvider implements TextDocumentContentPr
         this._babylonHtml = encodeURI(fs.readFileSync(this._context.asAbsolutePath('pages/babylonView.html'), 'UTF-8'));
         this._cesiumHtml = encodeURI(fs.readFileSync(this._context.asAbsolutePath('pages/cesiumView.html'), 'UTF-8'));
         this._threeHtml = encodeURI(fs.readFileSync(this._context.asAbsolutePath('pages/threeView.html'), 'UTF-8'));
+        this._grimoireHtml = encodeURI(fs.readFileSync(this._context.asAbsolutePath('pages/grimoireView.html'), 'UTF-8'));
     }
 
     private addFilePrefix(file: string): string {
@@ -97,6 +99,7 @@ export class GltfPreviewDocumentContentProvider implements TextDocumentContentPr
             { id: 'babylonHtml', text: this._babylonHtml },
             { id: 'cesiumHtml', text: this._cesiumHtml },
             { id: 'threeHtml', text: this._threeHtml },
+            { id: 'grimoireHtml', text: this._grimoireHtml },
             { id: 'gltf', text: gltfContent },
             { id: 'gltfRootPath', text: gltfRootPath },
             { id: 'gltfFileName', text: gltfFileName }
@@ -106,6 +109,7 @@ export class GltfPreviewDocumentContentProvider implements TextDocumentContentPr
             'pages/babylonView.css',
             'pages/cesiumView.css',
             'pages/threeView.css',
+            'pages/grimoireView.css',
             'pages/previewModel.css'
         ];
 

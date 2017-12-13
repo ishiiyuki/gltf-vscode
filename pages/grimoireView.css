@@ -1,0 +1,16 @@
+#grimoireContainer {
+    position: absolute;
+    top: 0px;
+    width:100%;
+    height:100%;
+}
+
+#grimoireLogo {
+    position: absolute;
+    width: 100px;
+    bottom: 0px;
+    left: 0px;
+    padding: 10px;
+    background-color: white;
+    opacity: 0.8;
+}

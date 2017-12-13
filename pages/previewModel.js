@@ -11,6 +11,10 @@ var engineInfo = [{
     name: 'Three.js',
     html: 'threeHtml',
     view: ThreeView
+}, {
+    name: 'Grimoire.js',
+    html: 'grimoireHtml',
+    view: GrimoireView
 }];
 
 // Use Cesium's built-in copy of Knockout as the global UI manager
