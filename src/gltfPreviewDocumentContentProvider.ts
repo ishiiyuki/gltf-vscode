@@ -120,9 +120,14 @@ export class GltfPreviewDocumentContentProvider implements TextDocumentContentPr
             'engines/Three/three.min.js',
             'engines/Three/GLTF2Loader.js',
             'engines/Three/OrbitControls.js',
+            'engines/Grimoire/grimoire-preset-basic.min.js',
+            'engines/Grimoire/grimoire-animation.js',
+            'engines/Grimoire/grimoire-forward-shading.js',
+            'engines/Grimoire/grimoire-gltf.js',
             'pages/babylonView.js',
             'pages/cesiumView.js',
             'pages/threeView.js',
+            'pages/grimoireView.js',
             'pages/previewModel.js'
         ];
 
