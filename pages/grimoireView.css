@@ -14,3 +14,16 @@
     background-color: white;
     opacity: 0.8;
 }
+
+#grimoireLogo span{
+    display: inline-block;
+}
+
+#grimoireLogo-Icon {
+    width: 30px;
+    vertical-align: middle;
+}
+#grimoireLogo-Font {
+    width: 70px;
+    vertical-align: middle;
+}
