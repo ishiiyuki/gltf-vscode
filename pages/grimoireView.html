@@ -2,15 +2,15 @@
   <script type="text/goml">
     <goml>
      <scene>
-      <camera class="camera" near="0.01" far="1000.0" position="0,1.0,4">
+      <camera class="camera" near="0.01" far="1000.0" position="0,0,4">
         <camera.components>
-          <MouseCameraControl zoomSpeed="0.1" center="0,1,0"/>
+          <MouseCameraControl zoomSpeed="0.1" center="0,0,0"/>
         </camera.components>
       </camera>
       <!-- <mesh color="red" position="0,0,0"/> -->
-        <light type="directional" rotation="0d,30,0d" color="white" intensity="4"/>
+        <light type="directional" rotation="0d,30,45d" color="white" intensity="4"/>
         <light type="directional" rotation="0d,-90,0d" color="white" intensity="2"/>
-        <light type="directional" rotation="0d,150,0d" color="white" intensity="2"/>
+        <light type="directional" rotation="0d,150,-45d" color="white" intensity="2"/>
      </scene>
     </goml>
   </script>
